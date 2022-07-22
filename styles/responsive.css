@@ -228,30 +228,10 @@
     /* Schedule CSS Start */
     .schedules{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 25px;
+        justify-items: center;
     }
-    .schedule{
-        width: 312px;
-        height: 242px;
-        background-color: #EEEEE4;
-        margin-bottom: 25px;
-        border-radius: 5px;
-        text-align: center;
-    }
-    .schedule p{
-        color: #F7024D;
-    }
-    .teams{
-        display: flex;
-        padding: 15px;
-        width: 90%;
-        align-items: center;
-        margin: auto;
-    }
-    .teams img{
-        padding: 10px;
-    }   
 }
 
 
