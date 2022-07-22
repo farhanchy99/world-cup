@@ -1,8 +1,11 @@
+/* Common Css */
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
+    background: linear-gradient(99deg, rgba(54,5,25,1) 0%, rgba(139,21,56,1) 100%);
 }
 h1{
     font-size: 70px;
@@ -16,6 +19,7 @@ h2{
 h3{
     font-size: 18px;
     color: black;
+    margin-bottom: 20px;
 }
 p{
     font-size: 16px;
@@ -27,16 +31,23 @@ a{
     text-decoration: none;
     text-align: center;
 }
+ul{
+    list-style-type: none;
+    padding: 0;
+}
 img{
     width: 100%;
 }
+
+/* Header CSS start */
 .header{
     width: 100%;
     padding-top: 30px;
     padding-bottom: 200px;
+    margin: auto;
 }
 .banner{
-    background-color: black;
+    background: linear-gradient(90deg, rgba(83,1,103,1) 0%, rgba(136,63,178,1) 100%);
     width: 85%;
     height: 620px;
     margin: auto;
@@ -52,11 +63,20 @@ img{
 }
 .banner_left a{
     color: white;
-    background-color: blue;
+    border: 2px solid white;
     padding: 15px 30px;
     border-radius: 5px;
     position: absolute;
     margin-top: 30px;
+    transition-duration: 0.4s;
+}
+.banner_left a:hover{
+    background-color: white;
+    color: #841034;
+    transform: translateY(-5px);
+}
+.fa-chevron-right{
+    margin-left: 15px;
 }
 .banner_left p{
     margin-bottom: 50px;
@@ -66,21 +86,165 @@ img{
     margin-left: 5%;
     padding-left: 2%;
 }
+/* Header CSS End */
 
+/* Blog CSS Start */
 .main{
-    width: 85%;
-    display: flex;
+    padding-bottom: 200px;
+    width: 90%;
     margin: auto;
+}
+.article{
+    display: flex;
 }
 .menu{
     width: 312px;
     height: 312px;
     border-radius: 10px;
-    background-color: black;
+    background: linear-gradient(126deg, rgba(126,19,51,1) 0%, rgba(188,16,64,1) 99%);
     padding: 30px;
     margin-right: 30px;
 }
-.menu li{
-    padding: 15px 40px;
-    background-color: beige;
+.menu ul li a{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    padding: 20px 40px;
+    position: relative;
+    transition-duration: 0.5s;
 }
+.menu ul li a:hover{
+    background-color: white;
+    color: #a4153b;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+}
+.blog{
+    width: 312px;
+    height: 362px;
+    background-color: #EEEEE4;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+.blog img{
+    border-radius: 5px 5px 0 0;
+}
+.infos{
+    padding: 0px 15px;
+}
+.infos a{
+    border: 2px solid #a5153b;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #a5153b;
+    font-weight: 500;
+    transition-duration: 0.4s;
+}
+.infos a:hover{
+    background-color: #a5153b;
+    color: white;
+    border: 2px solid #a5163b;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 140px;
+    color: #949494;
+    padding-top: 20px;
+}
+.expand{
+    display: none;
+    overflow: hidden;
+    margin: auto;
+    width: 20%;
+}
+.button{
+    display: block;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 30px;
+    transition-duration: 0.4s;
+}
+.fa-clock{
+    margin-right: 10px;
+}
+.fa-comment{
+    margin-right: 10px;
+}
+/* Blog CSS End */
+
+/* Footer CSS Start */
+.footer{
+    background-color: #020F2A;
+    text-align: center;
+    height: 300px;
+    padding: 5%;
+}
+.footer ul{
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+.footer ul li{
+    color: white;
+}
+.social-media{
+    margin-top: 15px;
+}
+.social-media a{
+    padding: 15px;
+}
+.social-media i{
+    transition-duration: 0.4s;
+}
+.social-media i:hover{
+    transform: translateY(-5px);
+}
+/* Footer CSS End */
+
+/* Schedule CSS Start */
+.schedules{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+}
+.schedule{
+    width: 312px;
+    height: 242px;
+    background-color: #EEEEE4;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+.schedule p{
+    color: #F7024D;
+}
+.teams{
+    display: flex;
+    padding: 15px;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+}
+.teams img{
+    padding: 10px;
+}
+/* Schedule CSS End */
+
+
+
+
+
+
+
+

@@ -1,0 +1,259 @@
+/* Tablet Responsive */
+
+
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    h2{
+        font-size: 20px;
+        color: black;
+    }
+    h3{
+        font-size: 18px;
+        color: black;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    /* Header CSS start */
+    .header{
+        padding-bottom: 50px;
+    }
+    .banner{
+        height: 420px;
+        margin: auto;
+        padding: 30px;
+    }
+    .banner_left{
+        width: 55%;
+    }
+    .banner_left p{
+        margin: 0;
+    }
+    .banner_right{
+        padding-top: 60px;
+    }
+    /* Header CSS End */
+    
+    /* Blog CSS Start */
+    .main{
+        padding-bottom: 130px;
+        width: 90%;
+        margin: auto;
+    }
+    .article{
+        display: block;
+    }
+    .menu{
+        width: 100%;
+        height: 0%;
+        background: none;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .menu ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu ul li a{
+        padding: 20px 70px;
+        margin: auto;
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .blog{
+        width: 333px;
+        height: 415px;
+    }
+    .infos h3{
+        margin-bottom: 30px;
+    }
+    .info{
+        padding-top: 30px;
+    }
+    .expand{
+        display: block;
+    }
+    /* Blog CSS End */
+    
+    /* Footer CSS Start */
+    .footer ul{
+        display: block;
+        width: 90%;
+    }
+    .footer ul li{
+        display: inline-block;
+        padding: 10px;
+    }
+    /* Footer CSS End */
+    
+    /* Schedule CSS Start */
+    .schedules{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    /* Schedule CSS End */
+
+}
+
+
+/* Mobile Responsive */
+
+
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 24px;
+        line-height: 33px;
+    }
+    h2{
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    /* Header CSS start */
+    .header{
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin: auto;
+    }
+    .banner{
+        background: linear-gradient(90deg, rgba(83,1,103,1) 0%, rgba(136,63,178,1) 100%);
+        width: 70%;
+        height: 680px;
+        margin: auto;
+        border-radius: 30px;
+        padding: 30px;
+        display: block;
+        justify-content: center;
+    }
+    .banner_left{
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        margin: auto;
+    }
+    .banner_left a{
+        color: white;
+        border: 2px solid white;
+        padding: 15px 30px;
+        border-radius: 5px;
+        position: relative;
+        margin-top: 30px;
+        transition-duration: 0.4s;
+    }
+    .banner_left a:hover{
+        background-color: white;
+        color: #841034;
+        transform: translateY(-5px);
+    }
+    .fa-chevron-right{
+        margin-left: 15px;
+    }
+    .banner_left p{
+        margin-bottom: 50px;
+    }
+    .banner_right{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        padding-top: 15%;
+    }
+    /* Header CSS End */
+    
+    /* Blog CSS Start */
+    .article{
+        display: block;
+        padding-bottom: 50px;
+    }
+    .menu{
+        background: none;
+        margin: auto;
+        padding: 0;
+    }
+    .menu ul li a{
+        border: 2px solid white;
+        border-radius: 10px;
+        margin-top: 30px;
+        text-align: center;
+        display: block;
+        padding: 20px 40px;
+        position: relative;
+        transition-duration: 0.5s;
+    }
+    .menu ul li a:hover{
+        background-color: white;
+        color: #a4153b;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 25px;
+    }
+    .blog{
+        width: 335px;
+        height: 385px;
+        margin: auto;
+    }
+    .info{
+        padding-top: 30px;
+    }
+    /* Blog CSS End */
+    
+    /* Footer CSS Start */
+    .footer{
+        height: 400px;
+    }
+    .footer ul{
+        display: block;
+    }
+    .footer ul li {
+        margin-bottom: 15px;
+    }
+    .social-media{
+        margin: auto;
+    }
+    /* Footer CSS End */
+    
+    /* Schedule CSS Start */
+    .schedules{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 25px;
+    }
+    .schedule{
+        width: 312px;
+        height: 242px;
+        background-color: #EEEEE4;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .schedule p{
+        color: #F7024D;
+    }
+    .teams{
+        display: flex;
+        padding: 15px;
+        width: 90%;
+        align-items: center;
+        margin: auto;
+    }
+    .teams img{
+        padding: 10px;
+    }   
+}
+
+
+
+
